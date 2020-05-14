@@ -124,6 +124,7 @@
                     <li>Open your Processing Report document/log</li>
                     <li>Open your survey platform (Qualtrics, testable, etc.,), and login to gain access to your data. </li>
                 </ol>
+                <br>
                 <h3>Video download</h3>
                 <ul>
                   <li><i class="bx bx-plus"></i><b>Click on the PANDA logo in the top left to view your dashboard</b>, where all studies and the number of open cases for each study are listed</li>
@@ -136,10 +137,44 @@
                         <li><i class="bx bx-plus"></i>Please make sure you are recording the date of testing, rather than the date you are downloading the video. The date of download will always be saved as metadata in the file itself.</li>
                         <li><i class="bx bx-plus"></i>Videos are downloaded in <b>.webm</b> format, and need to be converted to <b>.mp4</b> files in order to be opened readily on your computer.</li>
                       </ul>
-                
             </div>
 
+            <div class="pt-4">
+                <h3>Video conversion</h3>
+                <p>
+                  We use the free, open-source video conversion software <a href="https://handbrake.fr/downloads.php" target="_blank">HandBrake</a> to convert raw .webm files to usable .mp4 or .mov files. Videos in mp4 format should then be stored to your lab’s server. 
+                </p>
+            </div>
+
+            <div class="pt-4">
+                <h3>Survey platform data</h3>
+                <p>
+                  In cases where a participant’s video file is empty or corrupted, it is almost impossible to accurately determine (1) whether a child and parent dyad completed the study, (2) if parent consent/child assent was provided, and (3) whether the video captured the full length of the study session. For this reason, we also consider evidence of study completion (reported by the survey platform that hosts your study) when considering the validity of the data itself. The following are instructions for accessing study completion data on Qualtrics:
+                </p>
+                <ol>
+                  <li>Navigate to the Qualtrics homepage where all study projects are listed, and click on your study survey.
+                  <li>Click on “Data & Analysis” to view your study data collected from Qualtrics.</li>
+                  <li>On the top right, click “Responses in Progress” to view study sessions that have not closed yet. </li>
+                  <li>Go through the list of sessions in progress, and manually close sessions that have sufficient study completion. What can be considered “sufficient study completion” is subjective, but here are some general rules of thumb:</li>
+                  <ul>
+                     <li><i class="bx bx-plus"></i>Parents often close the browser once they have finished all target questions but before “ending” the survey (leaving study completion at 99%).</li>
+                      <li><i class="bx bx-plus"></i>Sometimes parents who are familiar with taking our unmoderated remote studies may skip some of the optional questions at the end of a study and end their session (potentially leaving study completion at 84%, for example). </li>
+                  </ul>
+                  <li>Once you have closed the necessary sessions, navigate to the main “Recorded Responses” page, and click on the “+” symbol to add the following columns:</li>
+                  <ul>
+                      <li><i class="bx bx-plus"></i>Discoveries Online ID (which can be found in the “embedded data” tab; as long as you embedded this is the survey flow of your study as described here)</li>
+                      <li><i class="bx bx-plus"></i>Progress (which can be found in the “survey metadata” tab)</li>
+                  </ul>
+                  <li>Record session completion percentage in the processing log. </li>
+                </ol>
+            </div>
+
+
+
+
+
            </div>
+      </div>
     </section>
   </main><!-- End #main -->
 
