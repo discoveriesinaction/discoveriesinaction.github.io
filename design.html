@@ -25,13 +25,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Bocor - v2.0.0
-  * Template URL: https://bootstrapmade.com/bocor-bootstrap-template-nice-animation/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -48,11 +41,6 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <!-- <li class="active"><a href="#header">Home</a></li>
-          <li><a href="parents.html">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li> -->
           <li class="drop-down"><a href="">Guides for remote research</a>
             <ul>
               <li><a href="pre-registration.html">Pre-registration</a></li>
@@ -72,38 +60,9 @@
         </ul>
       </nav>
       <!-- .nav-menu -->
-<!-- 
 
-                    <li class="drop-down"><a href="irb.html">IRB language</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li> -->
     </div>
   </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <!-- <section id="hero">
-
-    <div class="container">
-      <div class="row d-flex align-items-center"">
-      <div class=" col-lg-6 py-5 py-lg-0 order-2 order-lg-1" data-aos="fade-right">
-        <h1>Getting started with remote data collection online</h1>
-        <h2>A tagline</h2>
-        <a href="#about" class="btn-get-started scrollto">Discover</a>
-      </div>
-      <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left">
-        <img src="assets/img/hero-img.png" class="img-fluid" alt="">
-      </div>
-    </div>
-    </div>
-
-  </section> -->
-  <!-- End Hero -->
 
   <main id="main">
     <section id="features" class="features section-bg">
@@ -150,54 +109,7 @@
 
         </div>
     </section>
-    <!-- ======= Clients Section ======= -->
-    <!-- <section id="clients" class="clients section-bg">
-      <div class="container">
-
-        <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="assets/img/clients/client-1.png" class="img-fluid" alt="" data-aos="flip-right">
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="assets/img/clients/client-2.png" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="100">
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="assets/img/clients/client-3.png" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="200">
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="assets/img/clients/client-4.png" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="300">
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="assets/img/clients/client-5.png" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="400">
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="assets/img/clients/client-6.png" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="500">
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-	</section> -->
-	<!-- End Clients Section -->
-
+    
     <!-- ======= About Section ======= -->
     <section id="about" class="about section-bg">
       <div class="container">
@@ -990,13 +902,161 @@
                       </div>
 
                       <div class="tab">
-                        <input type="radio" id="qualtrics4" name="rd">
-                        <label for="qualtrics4" class="tab-label">Advanced features for making studies more child-friendly</label>
+                        <input type="radio" id="embed-time" name="rd">
+                        <label class="tab-label" for="embed-time">Embedding timing data</label>
                         <div class="tab-content">
-                          <p>ADD STUFF</p>
+                          <p>Timing data is useful because it allows you to match up what the child was doing in the webcam video with what was happening onscreen in the study.<br><br>
+                            
+                          To embed timing information in Qualtrics, the first step is making sure that trials are divided into separate blocks within your Qualtrics study. The reason for this is that you can embed data before and after a block, but not within a block, so you can’t track the exact timing of questions within a block. Once you have trials in separate blocks, you can then set the timing information using Survey Flow in Qualtrics.
+                          </p>
+
+                          <ol>
+                            <li>In your study, click on Survey Flow</li>
+                            <li>On the right-hand side of your first block, click “Add Below”</li>
+                            <li>A new cell will appear asking, “What do you want to add?” Choose “Embedded Data”<br>
+                              <div class="center_box">
+                                <img class="img_center" src="assets/img/design/embedded_data.png">
+                              </div>
+                            </li>
+                            <li>Once you select Embedded Data, you will be prompted to “Create New Field or Choose From Dropdown.<br>
+                              <div class="center_box">
+                                <img class="img_center" src="assets/img/design/create_new.png">
+                              </div>
+                            </li>
+                            <li>First, you need to set the participant ID so that this information gets passed from the web platform to your Qualtrics survey. To do this, just click into the “Create New Field…” window, and enter “ID”<br>
+                              <div class="center_box">
+                                <img class="img_center" src="assets/img/design/embedded_id.png">
+                              </div>
+                            </li>
+                            <li>This embedded data should be placed as the first element in your survey flow, so click “Move” and move it to the beginning of your study</li>
+                            <li>Next, you need to tell Qualtrics you want to keep track of timing by setting the Total Duration. Again, click Add Below 🡪 Embedded Data. Then from the dropdown menu, choose: Survey Metadata 🡪 Total Duration Q_TotalDuration. Move this embedded data to the beginning of your study, just after ID
+                            <li>You can now embed onsets and offset before and after every block you want to keep track of. 
+                            To do this, again click Add Below 🡪 Embedded Data. Then click into the dropdown menu and name the data you are embedding.</li>
+                            <li>You can name this whatever you want (it will be the name of a column in your Qualtrics output), but we typically name ours something like this:<br>
+                              <ul>
+                                <li><i class="bx bx-plus"></i><b>XXX_onset</b></li>
+                                <li><i class="bx bx-plus"></i>XXX (Trial Block)</li>
+                                <li><i class="bx bx-plus"></i><b>XXX_offset</b></li>
+                              </ul>
+                            </li> 
+                            <li>Type in your embedded data name, then click on “Set a Value Now” and where it says Custom Value:<br>
+                              <div class="center_box">
+                                <img class="img_center" src="assets/img/design/custom_value.png">
+                              </div><br>
+                            Enter this code: <b>${e://Field/Q_TotalDuration}</b><br>
+                            This basically tells Qualtrics, “record the time right now.”</li>
+                            <li>Repeat to add onsets and offsets for every block you want to time throughout your study.</li>
+                            <li>You can structure this is a few different ways. The simplest is just to have everything lined up in the Survey Flow exactly as it appears. So, for example, if I have a trial called “trial1,” I can embed timing data like this:<br>
+                              <div class="center_box">
+                                <img class="img_center" src="assets/img/design/embedded_flow.png">
+                              </div>
+                            </li>
+                            <li>Often we have more complicated designs though—maybe we want to show trials in counterbalanced or random order. If you present multiple trial blocks and their timing all together in random order, you would have no way of knowing what you were timing! So, for these designs, you can split each trial block and its embedded timing into separate groups, then just randomize the presentation of the groups, like this:<br>
+                              <div class="center_box">
+                                <img class="img_center" src="assets/img/design/timing.png">
+                              </div>
+                            </li>
+                            <li>Repeat the onsets and offsets for any sections you want to time. These can time multiple blocks, for instance if you have several blocks for consent and really only need to know the start and end of the entire consent portion of your study. In that case you can just add embedded data for “consent_onset” before the consent trial blocks, and embedded data for “consent_offset” after the consent blocks. But keep in mind that you can’t time trials within a block using this method.</li>
+                          </ol>
                         </div>
                       </div>
 
+                      <div class="tab">
+                        <input type="radio" id="autoplay-video" name="rd">
+                        <label for="autoplay-video" class="tab-label">Making videos play automatically</label>
+                        <div class="tab-content">
+                          <p>
+                          To enable your videos to play automatically, click on the video that you want to set up and then select HTML View. Delete the first “<” at the beginning and paste these three lines of code:
+                          <xmp>
+                            <video autoplay="“”">
+                            <source src="“movie.mp4&quot;" type="“video/mp4”">
+                            <source src="“movie.ogg”" type="“video/ogg”">
+                          </xmp>
+
+                          This is what your code should look like (the highlighted lines being the newly pasted lines):<br>
+
+                            <div class="center_box">
+                              <img class="img_center" style="width: 60%;" src="assets/img/design/advanced1.png">
+                            </div><br>
+
+                          Switch back to Normal View and the video should now be auto-playing.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="tab">
+                        <input type="radio" id="auto-advance-video" name="rd">
+                        <label for="auto-advance-video" class="tab-label">Having task auto-advance once a video is finished</label>
+                        <div class="tab-content">
+                           <p>
+                             To set a video to auto-advance, select the question that contains the video you wish to set up and add a new question directly below it (by clicking on the icon circled below).
+
+                            <div class="center_box">
+                              <img class="img_center" style="width: 60%;" src="assets/img/design/advanced2.png">
+                            </div><br>
+
+                            Then select Timing under Change Question Type on the right column. Here, you can enter the number of seconds that you would like the video to auto-advance after. One tip is to set this up (if needed) before setting up the auto-play function, because after you do so, the length of the video no longer shows up by default in Qualtrics, so you would need to go back to your raw videos to check the number of seconds you should enter. Another tip is that when entering the number of seconds, it might be a good idea to round up or even add a couple of seconds (feel free to adjust for more or fewer seconds based on the length and size of your video and how much your test/pilot runs lag) since poor internet connection might sometimes cause videos to lag for a couple of seconds when playing, and you want to ensure that the participant sees the full video.
+
+                            </p>
+                        </div>
+                      </div>
+
+                      <div class="tab">
+                        <input type="radio" id="auto-advance-question" name="rd">
+                        <label for="auto-advance-question" class="tab-label">Having task auto-advance after participants make a response</label>
+                        <div class="tab-content">
+                           <p>
+                            By default, when you set up questions in Qualtrics, participants will need to click on a submit arrow after each question to submit their responses. If you would like participants’ surveys to automatically advance after clicking their response, you will need to set up this auto-advance function. (The main thing to consider when deciding whether or not this is needed is whether or not you would prefer participants be able to change their mind about their answers – if not, you would likely prefer to have this function set up, but if so, you would likely prefer to keep the submit arrow button.)<br><br>
+
+                            To enable auto-advancing for participant responses, select the question that you would like to add the function to and click on the settings icon beneath it (as circled below).<br><br>
+
+                            <div class="center_box">
+                              <img class="img_center" style="width: 60%;" src="assets/img/design/advanced3.png">
+                            </div><br>
+
+                            Then, select Add JavaScript and paste these lines of code:<br><br>
+                            
+                            <xmp>
+                            Qualtrics.SurveyEngine.addOnload(function()
+                            {
+                            var that = this;
+                            this.questionclick = function(event,element){
+                            if (element.type == 'radio') {
+                            that.clickNextButton();
+                            }
+                            }
+
+                            });
+
+                            Qualtrics.SurveyEngine.addOnReady(function()
+                            {
+                              /*Place your JavaScript here to run when the page is fully displayed*/
+
+                            });
+
+                            Qualtrics.SurveyEngine.addOnUnload(function()
+                            {
+                              /*Place your JavaScript here to run when the page is unloaded*/
+
+                            });
+                          </xmp>
+
+                            Click on Save to finish.<br><br>
+                            </p>
+                        </div>
+                      </div>
+
+                      <div class="tab">
+                        <input type="radio" id="qualtrics5" name="rd">
+                        <label for="qualtrics5" class="tab-label">Disabling responses until video finishes playing</label>
+                        <div class="tab-content">
+                           <p>
+                            Follow the exact same instructions as for auto-advancing functions (# 2 in this list), except enter in the number of seconds that you would like to disable submitting responses for participants under Auto-advance after (seconds) instead.
+                            </p>
+                        </div>
+                      </div>
+
+                            
                       <div class="tab">
                         <input type="radio" id="qualtrics5" name="rd">
                         <label for="qualtrics5" class="tab-label">Checking your study for errors</label>
@@ -1171,553 +1231,16 @@
     <!-- End Setting up on qualtrics -->
 
 
-    <!-- ======= Services Section ======= -->
-    <!-- <section id="services" class="services section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2 data-aos="fade-in">Services</h2>
-          <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
-            <div class="card">
-              <div class="card-img">
-                <img src="assets/img/services-1.jpg" alt="...">
-              </div>
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Temporibus laudantium</a></h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
-            <div class="card">
-              <div class="card-img">
-                <img src="assets/img/services-2.jpg" alt="...">
-              </div>
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Aperiores voluptates</a></h5>
-                <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
-                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
-            <div class="card">
-              <div class="card-img">
-                <img src="assets/img/services-3.jpg" alt="...">
-              </div>
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Veritatis natus nisi</a></h5>
-                <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p>
-                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
-            <div class="card">
-              <div class="card-img">
-                <img src="assets/img/services-4.jpg" alt="...">
-              </div>
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Aliquam veritatis</a></h5>
-                <p class="card-text">Nostrum eum sed et autem dolorum perspiciatis. Magni porro quisquam laudantium voluptatem. In molestiae earum ab sit esse voluptatem. Eos ipsam cumque ipsum officiis qui nihil aut incidunt aut</p>
-                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End Services Section -->
-
-    <!-- ======= Features Section ======= -->
-    <!-- <section id="features" class="features section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2 data-aos="fade-in">Features</h2>
-          <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row content">
-          <div class="col-md-5" data-aos="fade-right">
-            <img src="assets/img/features-1.svg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7 pt-4" data-aos="fade-left">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-            <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row content">
-          <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
-            <img src="assets/img/features-2.svg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
-            <h3>Corporis temporibus maiores provident</h3>
-            <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
-          </div>
-        </div>
-
-        <div class="row content">
-          <div class="col-md-5" data-aos="fade-right">
-            <img src="assets/img/features-3.svg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7 pt-5" data-aos="fade-left">
-            <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
-            <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
-            <ul>
-              <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="icofont-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row content">
-          <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
-            <img src="assets/img/features-4.svg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
-            <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
-            <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End Features Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <!-- <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2 data-aos="fade-in">Portfolio</h2>
-          <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="icofont-plus-circle"></i></a>
-                <a href="#" title="More Details"><i class="icofont-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-plus-circle"></i></a>
-                <a href="#" title="More Details"><i class="icofont-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="icofont-plus-circle"></i></a>
-                <a href="#" title="More Details"><i class="icofont-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="icofont-plus-circle"></i></a>
-                <a href="#" title="More Details"><i class="icofont-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="icofont-plus-circle"></i></a>
-                <a href="#" title="More Details"><i class="icofont-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="icofont-plus-circle"></i></a>
-                <a href="#" title="More Details"><i class="icofont-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="icofont-plus-circle"></i></a>
-                <a href="#" title="More Details"><i class="icofont-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="icofont-plus-circle"></i></a>
-                <a href="#" title="More Details"><i class="icofont-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-plus-circle"></i></a>
-                <a href="#" title="More Details"><i class="icofont-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End Portfolio Section -->
-
-    <!-- ======= Team Section ======= -->
-    <!-- <section id="team" class="team section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2 data-aos="fade-in">Team</h2>
-          <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="member" data-aos="fade-up">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" alt=""></div>
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-              <div class="social">
-                <a href=""><i class="icofont-twitter"></i></a>
-                <a href=""><i class="icofont-facebook"></i></a>
-                <a href=""><i class="icofont-instagram"></i></a>
-                <a href=""><i class="icofont-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="member" data-aos="fade-up" data-aos-delay="100">
-              <div class="pic"><img src="assets/img/team/team-2.jpg" alt=""></div>
-              <h4>Sarah Jhinson</h4>
-              <span>Product Manager</span>
-              <div class="social">
-                <a href=""><i class="icofont-twitter"></i></a>
-                <a href=""><i class="icofont-facebook"></i></a>
-                <a href=""><i class="icofont-instagram"></i></a>
-                <a href=""><i class="icofont-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="member" data-aos="fade-up" data-aos-delay="200">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" alt=""></div>
-              <h4>William Anderson</h4>
-              <span>CTO</span>
-              <div class="social">
-                <a href=""><i class="icofont-twitter"></i></a>
-                <a href=""><i class="icofont-facebook"></i></a>
-                <a href=""><i class="icofont-instagram"></i></a>
-                <a href=""><i class="icofont-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" alt=""></div>
-              <h4>Amanda Jepson</h4>
-              <span>Accountant</span>
-              <div class="social">
-                <a href=""><i class="icofont-twitter"></i></a>
-                <a href=""><i class="icofont-facebook"></i></a>
-                <a href=""><i class="icofont-instagram"></i></a>
-                <a href=""><i class="icofont-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End Team Section -->
-
-    <!-- ======= Pricing Section ======= -->
-    <!-- <section id="pricing" class="pricing section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2 data-aos="fade-in">Pricing</h2>
-          <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row no-gutters">
-
-          <div class="col-lg-4 box" data-aos="zoom-in">
-            <h3>Free</h3>
-            <h4>$0<span>per month</span></h4>
-            <ul>
-              <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-              <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-              <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-              <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
-              <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-            </ul>
-            <a href="#" class="get-started-btn">Get Started</a>
-          </div>
-
-          <div class="col-lg-4 box featured" data-aos="zoom-in">
-            <span class="featured-badge">Featured</span>
-            <h3>Business</h3>
-            <h4>$29<span>per month</span></h4>
-            <ul>
-              <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-              <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-              <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-              <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-              <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-            </ul>
-            <a href="#" class="get-started-btn">Get Started</a>
-          </div>
-
-          <div class="col-lg-4 box" data-aos="zoom-in">
-            <h3>Developer</h3>
-            <h4>$49<span>per month</span></h4>
-            <ul>
-              <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-              <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-              <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-              <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-              <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-            </ul>
-            <a href="#" class="get-started-btn">Get Started</a>
-          </div>
-
-        </div>
-
-      </div>
-	</section> -->
-	<!-- End Pricing Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <!-- <section id="contact" class="contact section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2 data-aos="fade-in">Contact</h2>
-          <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-6">
-
-            <div class="row">
-              <div class="col-md-12">
-                <div class="info-box" data-aos="fade-up">
-                  <i class="bx bx-map"></i>
-                  <h3>Our Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box mt-4" data-aos="fade-up" data-aos-delay="100">
-                  <i class="bx bx-envelope"></i>
-                  <h3>Email Us</h3>
-                  <p>info@example.com<br>contact@example.com</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box mt-4" data-aos="fade-up" data-aos-delay="100">
-                  <i class="bx bx-phone-call"></i>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form" data-aos="fade-up">
-              <div class="form-row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End Contact Section -->
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-
-    <!-- <div class="footer-top">
-
-      <div class="container" data-aos="fade-up">
-
-        <div class="row  justify-content-center">
-          <div class="col-lg-6">
-            <h3>Bocor</h3>
-            <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-          </div>
-        </div>
-
-        <div class="row footer-newsletter justify-content-center">
-          <div class="col-lg-6">
-            <form action="" method="post">
-              <input type="email" name="email" placeholder="Enter your Email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-
-        <div class="social-links">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
-
-      </div>
-    </div> -->
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">
         &copy; Copyright <strong><span>Discoveries Online</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bocor-bootstrap-template-nice-animation/ -->
-        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
       </div>
     </div>
   </footer><!-- End Footer -->
