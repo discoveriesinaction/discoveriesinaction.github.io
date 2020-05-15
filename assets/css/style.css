@@ -1377,7 +1377,7 @@ input:checked ~ .tab-content {
 }
 
 .rarity{
-    /* top: 0; */
+    top: 0;
     left: 10%;
     position: absolute;
     width: 70%;
