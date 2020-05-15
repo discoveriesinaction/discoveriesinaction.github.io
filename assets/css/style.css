@@ -437,6 +437,10 @@ section {
   padding-bottom: 30px;
 }
 
+.section-title p {
+  text-align: left;
+}
+
 .section-title h2 {
   font-size: 32px;
   font-weight: 600;
@@ -658,6 +662,10 @@ section {
 }
 
 .features .content ul li {
+  padding-bottom: 10px;
+}
+
+.features .content ol li {
   padding-bottom: 10px;
 }
 
