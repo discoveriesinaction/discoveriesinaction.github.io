@@ -1375,3 +1375,17 @@ input:checked ~ .tab-content {
 .img_center {
   padding: 10px;
 }
+
+.rarity{
+    /* top: 0; */
+    left: 10%;
+    position: absolute;
+    width: 70%;
+    margin-bottom: 10%;
+}
+
+.rarity-container {
+  margin-bottom: 250px;
+}
+
+video:focus { outline: none; }
