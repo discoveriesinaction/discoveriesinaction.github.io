@@ -1385,7 +1385,7 @@ input:checked ~ .tab-content {
 }
 
 .rarity-container {
-  margin-bottom: 250px;
+  position: relative;
 }
 
 video:focus { outline: none; }
