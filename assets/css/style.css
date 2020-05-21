@@ -1,10 +1,3 @@
-/**
-* Template Name: Bocor - v2.0.0
-* Template URL: https://bootstrapmade.com/bocor-bootstrap-template-nice-animation/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -64,12 +57,12 @@ html {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 80px;
+  height: 160px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
   padding: 16px 0;
-  background: #213b52;
+  background: #2772b3;
 }
 
 #header .logo h1 {
@@ -95,7 +88,7 @@ html {
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  max-height: 140px;
 }
 
 /*--------------------------------------------------------------
@@ -134,7 +127,7 @@ html {
 }
 
 .nav-menu .get-started a {
-  background: #213b52;
+  background: #2772b3;
   color: #fff;
   border-radius: 50px;
   margin: 2px 0 0 15px;
