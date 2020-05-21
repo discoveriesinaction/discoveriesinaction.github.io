@@ -83,6 +83,39 @@ html {
   background: #2772b3;
 }
 
+@media (max-width: 992px) {
+  #header {
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out ;
+    /* z-index: 9999; */
+    top: 0;
+    position: fixed;
+    width: 100%;
+  }
+
+  #header-logo {
+    height: 120px;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+  }
+
+  .shrink {
+    height: 100px !important;
+  }
+
+  .shrink-logo {
+    height: 80px !important;
+  }
+  
+  .section-title {
+    padding-top: 140px;
+  }
+}
+
+
+
 #header .logo h1 {
   font-size: 24px;
   margin: 0;
