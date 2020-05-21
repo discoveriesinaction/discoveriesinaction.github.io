@@ -11,7 +11,6 @@
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -33,10 +32,17 @@
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="container d-flex">
-
       <div class="logo mr-auto">
         <!-- <h1 class="text-light"><a href="index.html">Discoveries Online<span>.</span></a></h1> -->
-        <a href="index.html"><img src="assets/img/discoveries_logo.png" alt="" class="img-fluid"></a>
+        <a href="index.html">
+          <picture >
+            <source media="(max-width: 768px)"
+                    srcset="assets/img/discoveries_logo_alt_767px.png">
+            <source media="(min-width: 769px)"
+                    srcset="assets/img/discoveries_logo.png">
+            <img src="assets/img/discoveries_logo.png" alt="" class="img-fluid">
+          </picture>
+          </a>
       </div>
     </div>
   </header><!-- End Header -->
@@ -143,8 +149,8 @@
 
         <div class="row content">
           <div class="col-md-5 pt-4" data-aos="fade-right">
-            <h3>Children's knowledge of science</h3>
             <div class="rarity-container">
+              <h3>Children's knowledge of science</h3>
                 <video id="rarity1" controls onended="playNext()"
                    src="assets/resources/sample_studies/panda_paper_rarity_science_example.m4v" class="rarity img-fluid"></video>
                 <video id="rarity2" controls style="visibility: hidden;"

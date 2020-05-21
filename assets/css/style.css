@@ -155,7 +155,8 @@ html {
 
 .nav-menu .get-started a:hover {
   background: #fff;
-  /* color: #213b52; */
+  color: #fdc134;
+  border: 2px solid #fff;
 }
 
 .nav-menu .drop-down ul {
@@ -566,7 +567,6 @@ section {
 }
 
 .about .image {
-  background: url("../img/about.jpg") center center no-repeat;
   background-size: cover;
   min-height: 400px;
 }
@@ -672,6 +672,11 @@ section {
   padding: 0;
 }
 
+.features .content ol {
+  list-style: none;
+  padding: 0;
+}
+
 .features .content ul li {
   padding-bottom: 10px;
 }
@@ -681,6 +686,12 @@ section {
 }
 
 .features .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #fdc134;
+}
+
+.features .content ol i {
   font-size: 20px;
   padding-right: 4px;
   color: #fdc134;
@@ -1398,4 +1409,24 @@ input:checked ~ .tab-content {
   position: relative;
 }
 
+@media (max-width: 767px) {
+  .rarity {
+    opacity: 0;
+  }
+
+  .rarity-container {
+     opacity: 0;
+  }
+}
+
+
+
 video:focus { outline: none; }
+
+@media (max-width: 767px) {
+  .pt-4 {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+}

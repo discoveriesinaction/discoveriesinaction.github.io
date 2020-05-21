@@ -33,10 +33,20 @@
   <header id="header">
     <div class="container d-flex">
 
+      <div class="container d-flex">
       <div class="logo mr-auto">
         <!-- <h1 class="text-light"><a href="index.html">Discoveries Online<span>.</span></a></h1> -->
-        <a href="index.html"><img src="assets/img/discoveries_logo.png" alt="" class="img-fluid"></a>
+        <a href="index.html">
+          <picture >
+            <source media="(max-width: 768px)"
+                    srcset="assets/img/discoveries_logo_alt_767px.png">
+            <source media="(min-width: 769px)"
+                    srcset="assets/img/discoveries_logo.png">
+            <img src="assets/img/discoveries_logo.png" alt="" class="img-fluid">
+          </picture>
+          </a>
       </div>
+    </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
@@ -52,7 +62,7 @@
                   <li><a href="design.html#qualtrics">Setting up studies on Qualtrics</a></li>
                 </ul>
               </li>
-              <li><a href="hostmystudy.html">Hosting studies onling</a></li>
+              <li><a href="hostmystudy.html">Hosting studies online</a></li>
               <li><a href="datavyu.html">Processing webcam data</a></li>
               <li><a href="parents.html">The role of parents</a></li>
               <li><a href="recruitment.html">Sample recruitment materials</a></li>
@@ -79,13 +89,9 @@
               Videos are an essential part of the conducting unmoderated remote research because they assure that data collected via behavioral measures is usable (how else would we know that a child actually did the study!)&mdash;but they also allow us to collect a richer dataset that can be used to answer novel research questions that cannot be captured in traditional psychological measures. 
           </p>
         </div>
-    </div>
-    </section>
 
-    <section id="datavyu" class="features section-bg">
-      <div class="container">
         <div class="row content" data-aos="fade-in">
-          <div>
+          <div class="pt-4">
             <h3>How our lab uses Datavyu</h3>
             <p>
                 Once parents have uploaded their video recordings for each participant, the videos go through a Quality Assurance procedure (QA) as the first stage of data processing to determine whether the data are valid or not (see 
@@ -100,12 +106,8 @@
                 In addition to using Datavyu to code for interference, we can also use the platform to code for variables of interest, like conversations between parents and children as well as behavioral aspects of children’s interactions with the other people in their home environments (see <a href="https://osf.io/htn7z/" target="_blank">this study</a> as an example of using Datavyu to code for parent and child speech and behavior). 
             </p>
           </div>
-        </div>
-    </section>
-
-    <section id="databrary" class="features section-bg">
-      <div class="container">
-          <div class="row content" data-aos="fade-in">
+    
+              <div class="pt-4">
             <h3>Sharing videos with other researchers via Databrary</h3>
             <p>
              Webcam video is rich data, so each video offers a wealth of potential developmental data for researchers beyond the scope of the specific study’s questions. In order to share this rich data with the research community, we ask at the end of every study session for parents’ permission to share the video data with authorized researchers on <a href="www.databrary.org" target="_blank">Databrary</a>. Sharing videos on Databrary also helps with reproducibility and reliability (see here for more info). <br><br>
@@ -115,6 +117,7 @@
 
             <div class="center_box">
                 <img class="img_center" style="width: 60%;" src="assets/img/datavyu/databrary_consent.png">
+            </div>
             </div>
           </div>
         </div>

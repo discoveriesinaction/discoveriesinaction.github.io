@@ -34,10 +34,20 @@
   <header id="header">
     <div class="container d-flex">
 
+      <div class="container d-flex">
       <div class="logo mr-auto">
         <!-- <h1 class="text-light"><a href="index.html">Discoveries Online<span>.</span></a></h1> -->
-        <a href="index.html"><img src="assets/img/discoveries_logo.png" alt="" class="img-fluid"></a>
+        <a href="index.html">
+          <picture >
+            <source media="(max-width: 768px)"
+                    srcset="assets/img/discoveries_logo_alt_767px.png">
+            <source media="(min-width: 769px)"
+                    srcset="assets/img/discoveries_logo.png">
+            <img src="assets/img/discoveries_logo.png" alt="" class="img-fluid">
+          </picture>
+          </a>
       </div>
+    </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
@@ -53,7 +63,7 @@
                   <li><a href="design.html#qualtrics">Setting up studies on Qualtrics</a></li>
                 </ul>
               </li>
-              <li><a href="hostmystudy.html">Hosting studies onling</a></li>
+              <li><a href="hostmystudy.html">Hosting studies online</a></li>
               <li><a href="datavyu.html">Processing webcam data</a></li>
               <li><a href="parents.html">The role of parents</a></li>
               <li><a href="recruitment.html">Sample recruitment materials</a></li>
@@ -83,8 +93,11 @@
         </div>
 
         <div class="row content" data-aos="fade-in">
-            <h3>Sample Pre-Registration Text</h3>
           <div class="pt-4">
+            <h3>Sample Pre-Registration Text</h3>
+          </div>
+          <div class="pt-4">
+
               <h4>Data Collection Procedures</h4>
             <p>
                Participants will complete the study on their home or personal computers via the 
