@@ -1,4 +1,22 @@
 /*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+@font-face {
+    font-family: 'Verlag Bold';
+	src: 
+		url("../fonts/Verlag-Bold.otf") format("opentype"),  
+		url('../fonts/Verlag-Bold.woff2') format('woff2'),
+        url('../fonts/Verlag-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.verlag_bold {
+    font-family: 'Verlag Bold', "Raleway", Arial, sans-serif;
+}
+
+
+/*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
@@ -16,7 +34,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Verlag Bold', "Raleway", Arial, sans-serif;
 }
 
 html {
@@ -73,7 +91,7 @@ html {
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "Verlag Bold", "Poppins", sans-serif;
 }
 
 #header .logo h1 a, #header .logo h1 a:hover {
@@ -127,8 +145,8 @@ html {
 }
 
 .nav-menu .get-started a {
-  background: #2772b3;
-  color: #fff;
+  background: #fdc134;
+  color: #2772b3;
   border-radius: 50px;
   margin: 2px 0 0 15px;
   padding: 4px 25px 6px 25px;
@@ -136,8 +154,8 @@ html {
 }
 
 .nav-menu .get-started a:hover {
-  background: #fdc134;
-  color: #213b52;
+  background: #fff;
+  /* color: #213b52; */
 }
 
 .nav-menu .drop-down ul {
@@ -355,7 +373,7 @@ html {
   font-weight: 700;
   line-height: 56px;
   color: #d2e0ed;
-  font-family: "Poppins", sans-serif;
+  font-family: "Verlag Bold", "Poppins", sans-serif;
 }
 
 #hero h2 {
@@ -441,7 +459,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: "Verlag Bold", "Poppins", sans-serif;
   color: #213b52;
 }
 
@@ -999,7 +1017,7 @@ section {
   line-height: 26px;
   font-weight: 500;
   margin: 0 0 10px 28px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Verlag Bold", "Poppins", sans-serif;
 }
 
 .faq .faq-item p {
@@ -1171,7 +1189,7 @@ section {
   font-weight: 700;
   color: #fff;
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: "Verlag Bold", "Poppins", sans-serif;
   padding-bottom: 0;
   margin-bottom: 0;
 }
