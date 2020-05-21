@@ -89,13 +89,13 @@
                 
                 We will provide you with a research account and log-in, where you will be able to access your videos, which will be temporarily stored securely (and accessible only by you) on an external web server (more info on this coming soon). You will need to promptly download them and store them as required by your IRB, at which point, they will be permanently erased from the web server.<br><br>
                 
-                We detail <a href="#data-validation">below</a> how to access your study videos once a family has finished participating.
+                We detail below <a href="#getting-started">how to get your study running on Discoveries Online</a> and <a href="#data-validation">how to access your study videos</a> once a family has finished participating.
             </div>
 
            </div>
     </section>
 
-    <section id="data-validation" class="features section-bg">
+    <section id="getting-started" class="features section-bg">
       <div class="container">
 
         <div class="section-title">
@@ -108,7 +108,7 @@
               <p>
                 We are currently piloting hosting studies for other labs. If you are interested in having a study hosted in the near future, please email <a href="mailto:jao384@nyu.edu">our lab manager, Daryl</a>, just to let us know that you are interested, and he can give you a time-frame for when we might be able to accommodate your study.<br><br>
 
-                We currently can host studies that (1) have <a href="irb.html">IRB approval</a> for remote data collection that is consistent with our methods, (2) include <a href="irb.html#consent"> consent and child assent</a> at the start of the programmed study, and video upload instructions at the end, (3) are programmed in Qualtrics or a similar platform and can receive an <a href="design.html#embedded-data">embedded ID</a>, (4) can play in a Firefox or Chrome browser, and (5) are no more than 20 minutes long.<br><br>
+                We currently can host studies that (1) have <a href="irb.html">IRB approval</a> for remote data collection that is consistent with our methods, (2) include <a href="irb.html#consent"> consent and child assent</a> at the start of the programmed study, and video upload instructions at the end, (3) are programmed in Qualtrics or a similar platform and can receive an <a href="#embed-id">embedded ID</a>, (4) can play in a Firefox or Chrome browser, and (5) are no more than 20 minutes long.<br><br>
 
                 When you are ready for us to host your study, please email these things to <a href="mailto:jao384@nyu.edu">our lab manager, Daryl</a>:
               </p>
@@ -133,9 +133,9 @@
                 Each lab must handle their own recruitment, participant management and communication, and incentives. You might choose to recruit for your study on <a href="https://childrenhelpingscience.com/" target="_blank">childrenhelpingscience.com</a> or <a href="https://prolific.co/" target="_blank">Prolific</a>. 
               </p>
 
-              <h3>Information on how to set-up a Qualtrics file to receive and ID to link to your participant videos</h3>
+              <h3>Linking Qualtrics surveys to Discoveries Online</h3>
 
-              <p>
+              <p id="embed-id">
                 If you are setting your study in Qualtrics, you should embed participant ID into your survey flow so that you can match participants’ IDs in Discoveries Online (i.e., their video data) to their ID in your exported Qualtrics data (i.e., their response data). To do so, simply add an Embedded Data block in your study’s survey flow and select Add a New Field. Name the new field as “ID” and leave it so that the Value will be set from Panel or URL. Then, drag the block to the beginning of the survey flow. This is what the block should look like.<br><br>
 
                 <div class="center_box">
@@ -276,77 +276,6 @@
            </div>
       </div>
     </section>
-
-    <section id="data-validation" class="features section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2 data-aos="fade-in">Accessing your videos from Discoveries Online</h2>
-          <p data-aos="fade-in"></p>
-        </div>
-
-        <div class="row content" data-aos="fade-in">
-            <div class="pt-4">
-                <h3>Getting started</h3>
-                <p>
-                Please make sure you have the following tabs open to begin processing your data from Discoveries Online:</p>
-                <ol>
-                    <li>Navigate to <a href="https://discoveriesinaction.org" target="_blank">discoveriesinaction.org</a> and login to the website using your credentials. </li>
-                    <li>Open your Processing Report document/log</li>
-                    <li>Open your survey platform (Qualtrics, testable, etc.,), and login to gain access to your data. </li>
-                </ol>
-                <br>
-                <h3>Video download</h3>
-                <ul>
-                  <li><i class="bx bx-plus"></i><b>Click on the PANDA logo in the top left to view your dashboard</b>, where all studies and the number of open cases for each study are listed</li>
-                  <li><i class="bx bx-plus"></i><b>Click on the name of the study</b> you will be processing and do the following:</li>
-                    <ol>
-                      <li><b>Click “status” to sort the participant list</b>, and to move all open cases to the top of the list.<br>
-                          Always make sure to begin by processing the <b>earliest</b> participant session, to ensure that families who took the study first, are getting paid first (if you are providing compensation). </li>
-                      <li><b>Download the participant’s videos one by one and rename them informatively.</b> We suggest the following format, as an example: subjectID_studyname_testdate.</li>
-                      <ul>
-                        <li><i class="bx bx-plus"></i>Please make sure you are recording the date of testing, rather than the date you are downloading the video. The date of download will always be saved as metadata in the file itself.</li>
-                        <li><i class="bx bx-plus"></i>Videos are downloaded in <b>.webm</b> format, and need to be converted to <b>.mp4</b> files in order to be opened readily on your computer.</li>
-                      </ul>
-            </div>
-
-            <div class="pt-4">
-                <h3>Video conversion</h3>
-                <p>
-                  We use the free, open-source video conversion software <a href="https://handbrake.fr/downloads.php" target="_blank">HandBrake</a> to convert raw .webm files to usable .mp4 or .mov files. Videos in mp4 format should then be stored to your lab’s server. 
-                </p>
-            </div>
-
-            <div class="pt-4">
-                <h3>Survey platform data</h3>
-                <p>
-                  In cases where a participant’s video file is empty or corrupted, it is almost impossible to accurately determine (1) whether a child and parent dyad completed the study, (2) if parent consent/child assent was provided, and (3) whether the video captured the full length of the study session. For this reason, we also consider evidence of study completion (reported by the survey platform that hosts your study) when considering the validity of the data itself. The following are instructions for accessing study completion data on Qualtrics:
-                </p>
-                <ol>
-                  <li>Navigate to the Qualtrics homepage where all study projects are listed, and click on your study survey.
-                  <li>Click on “Data & Analysis” to view your study data collected from Qualtrics.</li>
-                  <li>On the top right, click “Responses in Progress” to view study sessions that have not closed yet. </li>
-                  <li>Go through the list of sessions in progress, and manually close sessions that have sufficient study completion. What can be considered “sufficient study completion” is subjective, but here are some general rules of thumb:</li>
-                  <ul>
-                     <li><i class="bx bx-plus"></i>Parents often close the browser once they have finished all target questions but before “ending” the survey (leaving study completion at 99%).</li>
-                      <li><i class="bx bx-plus"></i>Sometimes parents who are familiar with taking our unmoderated remote studies may skip some of the optional questions at the end of a study and end their session (potentially leaving study completion at 84%, for example). </li>
-                  </ul>
-                  <li>Once you have closed the necessary sessions, navigate to the main “Recorded Responses” page, and click on the “+” symbol to add the following columns:</li>
-                  <ul>
-                      <li><i class="bx bx-plus"></i>Discoveries Online ID (which can be found in the “embedded data” tab; as long as you embedded this is the survey flow of your study as <a href="design.html#embedded-data">described here</a>)</li>
-                      <li><i class="bx bx-plus"></i>Progress (which can be found in the “survey metadata” tab)</li>
-                  </ul>
-                  <li>Record session completion percentage in the processing log. </li>
-                </ol>
-            </div>
-
-
-
-
-
-           </div>
-      </div>
-    </section>
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -359,7 +288,7 @@
       <div class="credits" style="text-align: left;">
         <br>
         To cite this website or our paper, please use:<br>
-            Rhodes, M., Rizzo, M. T., Foster-Hanson, E., Moty, K., Leshin, R., Wang, M., Benitez, J., & Ocampo, J. D. (2020). 
+            Rhodes, M., Rizzo, M. T., Foster-Hanson, E., Moty, K., Leshin, R. A., Wang, M., Benitez, J., & Ocampo, J. D. (2020). 
             <span class="font-italic">Advancing developmental science via unmoderated remote research with children</span>. 
             <a href="https://psyarxiv.com/k2rwy" target="_blank">Pre-print</a>.
       </div>
