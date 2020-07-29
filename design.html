@@ -970,7 +970,7 @@
 
                       <div class="tab">
                         <input type="radio" id="auto-advance-video" name="rd">
-                        <label for="auto-advance-video" class="tab-label">Having task auto-advance once a video is finished</label>
+                        <label for="auto-advance-video" class="tab-label">Having task auto-advance after a certain time </label>
                         <div class="tab-content">
                            <p>
                              To set a video to auto-advance, select the question that contains the video you wish to set up and add a new question directly below it (by clicking on the icon circled below).
@@ -981,6 +981,45 @@
 
                             Then select Timing under Change Question Type on the right column. Here, you can enter the number of seconds that you would like the video to auto-advance after. One tip is to set this up (if needed) before setting up the auto-play function, because after you do so, the length of the video no longer shows up by default in Qualtrics, so you would need to go back to your raw videos to check the number of seconds you should enter. Another tip is that when entering the number of seconds, it might be a good idea to round up or even add a couple of seconds (feel free to adjust for more or fewer seconds based on the length and size of your video and how much your test/pilot runs lag) since poor internet connection might sometimes cause videos to lag for a couple of seconds when playing, and you want to ensure that the participant sees the full video.
 
+                            </p>
+                        </div>
+                      </div>
+
+                      <div class="tab">
+                        <input type="radio" id="auto-advance-video" name="rd">
+                        <label for="auto-advance-video" class="tab-label">Having task auto-advance once the video ends</label>
+                        <div class="tab-content">
+                           <p>
+                             1. Add JavaScript for the question with the video, and paste this:
+
+                            <div class="center_box">
+                              <img class="img_center" style="width: 60%;" src="assets/img/design/michelleedit1.png">
+                            </div><br>
+
+                             2. Go into HTML view and remove the first "<" in there and instead add this line:  
+                          
+                              <div class="center_box">
+                              <img class="img_center" style="width: 60%;" src="assets/img/design/michelleedit2.png">
+                            </div><br>
+                                
+                                So, for example, this is what it looks like for my study question:
+                                
+                                 <div class="center_box">
+                              <img class="img_center" style="width: 60%;" src="assets/img/design/michelleedit3.png">
+                            </div><br>
+                                
+                                3. (optional) Remove the controls functions (i.e., the highlighted text AND the controls = “controls” text in the first line) if you would like to remove the video progress bar:
+                                
+                                <div class="center_box">
+                              <img class="img_center" style="width: 60%;" src="assets/img/design/michelleedit4.png">
+                            </div><br>
+                                
+                                4. (optional) Remove the auto-advance setting in the timing question below if it was previously set and enter/keep the enable submit setting as needed (see below for example):
+                                
+                                <div class="center_box">
+                              <img class="img_center" style="width: 60%;" src="assets/img/design/michelleedit5.png">
+                            </div><br>
+                                
                             </p>
                         </div>
                       </div>
