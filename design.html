@@ -734,39 +734,29 @@
        <div class="row content" data-aos="fade-in">
             <div class="pt-4 block-with-text">
                <h3>Steps for creating a child-friendly study</h3> 
-               <p>This tutorial assumes you have some existing (albeit limited knowledge) of Qualtrics. 
-                  If you have never used Qualtrics before to create a basic survey (e.g., if you do not 
-                  know how to create a new survey, add a new question, or what a block is on Qualtrics), 
-                  then we recommend first looking through some of these tutorials to get started.<br><br>  
+               <p>This tutorial assumes you have some existing (albeit limited knowledge) of Qualtrics. If you have never used Qualtrics before to create a basic survey 
+                 (e.g., if you do not know how to create a new survey, add a new question, or what a block is on Qualtrics), 
+                 then we recommend first looking through some of these tutorials to get started.
+<br><br>  
 
-                  If you have used Qualtrics before, you’ve probably noticed that the survey features 
-                  aren’t necessarily designed with young children in mind. Below, we’ve outlined the steps 
-                  that we have found so far to be the most useful for creating a child-friendly survey, in 
-                  particular, one where ideally the child is able to answer most questions without parent 
-                  assistance. </p>
+                  If you have used Qualtrics before, you’ve probably noticed that the survey features aren’t necessarily designed with young children in mind. 
+                 Below, we’ve outlined the steps that we have found so far to be the most useful for creating a child-friendly survey, in particular, 
+                 one where ideally the child is able to answer most questions without parent assistance. </p>
                <div class="accordion-col">
                     <div class="tabs">
                       <div class="tab">
                         <input type="radio" id="qualtrics1" name="rd">
                         <label class="tab-label" for="qualtrics1">Breaking up your survey into blocks and trials</label>
                         <div class="tab-content">
-                          <p>You might think that it’s intuitive to have your survey structured so that 
-                            each block contains a single task in your study. However, we have found it useful 
-                            to have separate blocks for each trial because it allows you to keep track of when 
-                            participants are completing each trial. Qualtrics allows you to record timing data 
-                            for the onset and offset of any block, but not the onset and offset of questions 
-                            within a block.<br><br> 
+                          <p>You might think that it’s intuitive to have your survey structured so that each block contains a single task in your study. 
+                            However, we have found it useful to have separate blocks for each trial because it allows you to keep track of when participants are completing each trial. 
+                            Qualtrics allows you to record timing data for the onset and offset of any block, but not the onset and offset of questions within a block.<br><br> 
 
-                            With that timing data from the onset and offset of a block, you can use 
-                            Datavyu to sync children’s responses on Qualtrics with the participant’s 
-                            webcam video (see here for more detailed instructions about how to record 
-                            the timing of blocks, and how to import this information into Datavyu to 
-                            link it to the participant’s video). This allows you to know exactly which 
-                            trial a child is seeing throughout the video. This is useful for a variety 
-                            of reasons, including being able to exclude individual trials in which 
-                            there was possible interference without having to discard all of the 
-                            participant’s data (see here for more information on interference and the 
-                            role of parents), or allows you to easily match children’s verbal responses 
+                            With that timing data from the onset and offset of a block, you can use Datavyu to sync children’s responses on Qualtrics with the participant’s 
+                            webcam video (see here for more detailed instructions about how to record the timing of blocks, and how to import this information into Datavyu 
+                            to link it to the participant’s video). This allows you to know exactly which trial a child is seeing throughout the video. This is useful for a 
+                            variety of reasons, including being able to exclude individual trials in which there was possible interference without having to discard all of the 
+                            participant’s data (see here for more information on interference and the role of parents), or allows you to easily match children’s verbal responses 
                             to the questions or stimuli they saw. 
                             </p>
                         </div>
@@ -880,15 +870,16 @@
                         <input type="radio" id="qualtrics3" name="rd">
                         <label for="qualtrics3" class="tab-label">Adding media to your trials</label>
                         <div class="tab-content">
-                          <p>Then, you can start uploading your videos. (Mass upload videos) To do so, 
-                            in your desired question, enter the Rich Content Editor and click on the 
-                            movie icon. Then, click on Select File From Library → Upload a New File → 
-                            Choose File and then select the video you would like to upload. After 
-                            clicking on Save, wait for the preview to show and then click on Advanced 
-                            to enter your desired width and height (I usually set Width as 720 or 800, 
-                            which is about full screen – feel free to adjust based on your study’s needs). 
-                            The width and height ratio should be automatically locked, so just entering 
-                            width is enough. Click Insert to save and finish. 
+                          <p>To add media to individual trials, you will have to select different question types depending on your needs. To display ONLY a graphic 
+                            (image or video), add a Text/Graphic question type and select what you want to display from the “Content Type” dropdown menu. For images, 
+                            choose the “Graphic” option. For displaying videos, select “Text” from the dropdown menu, then enter the Rich Content Editor, and click on 
+                            the movie icon (you might have to click on “More” to see it). Next, click on Select File From Library → Upload a New File → Choose File and 
+                            then select the video you would like to upload. After clicking on Save, wait for the preview to show and then click on Advanced to enter your 
+                            desired width and height (typical to set width as 720 or 800, which is about full screen – however, feel free to adjust based on your study’s needs). 
+                            The width and height ratio should be automatically locked, so just entering width is enough. If your graphic already includes the relevant text, 
+                            you will want to remove the sample text in the box above your image by deleting the existing text, and leaving a literal space “ ” 
+                            (otherwise, Qualtrics automatically pipes in the prompt “Click to write the question text” again). Click Insert to save and finish.
+ 
                             </p>
                         </div>
                       </div>
@@ -981,15 +972,21 @@
                         <label for="auto-advance-video" class="tab-label">Having task auto-advance after a certain time </label>
                         <div class="tab-content">
                            <p>
-                             To set a video to auto-advance, select the question that contains the video you wish to set up and add a new question directly below it (by clicking on the icon circled below).
+                             To set a video to auto-advance after a set amount of time, select the question that contains the video you wish to set up and add a new 
+                             question directly below it. 
+
 
                             <div class="center_box">
                               <img class="img_center" style="width: 60%;" src="assets/img/design/advanced2.png">
                             </div><br>
 
-                            Then select Timing under Change Question Type on the right column. Here, you can enter the number of seconds that you would like the video to auto-advance after. One tip is to set this up (if needed) before setting up the auto-play function, because after you do so, the length of the video no longer shows up by default in Qualtrics, so you would need to go back to your raw videos to check the number of seconds you should enter. Another tip is that when entering the number of seconds, it might be a good idea to round up or even add a couple of seconds (feel free to adjust for more or fewer seconds based on the length and size of your video and how much your test/pilot runs lag) since poor internet connection might sometimes cause videos to lag for a couple of seconds when playing, and you want to ensure that the participant sees the full video.
-
-                            </p>
+                            Now, select Timing under Question Type. Here, you can choose to either (a) delay showing the submit button to “hold” participants on a page, or (b) 
+                          enter the number of seconds that you would like the video to auto-advance after. One tip is to set this up (if needed) before setting up the auto-play 
+                          function, because after you do so, the length of the video no longer shows up by default in Qualtrics, so you would need to go back to your raw videos to 
+                          check the number of seconds you should enter. Another tip is that when entering the number of seconds, it might be a good idea to round up or even add a 
+                          couple of seconds (feel free to adjust for more or fewer seconds based on the length and size of your video and how much your test/pilot runs lag) since 
+                          poor internet connection might sometimes cause videos to lag for a couple of seconds when playing, and you want to ensure that the participant sees the 
+                          full video.                            </p>
                         </div>
                       </div>
 
@@ -999,9 +996,25 @@
                         <div class="tab-content">
                            <p>
                              1. Add JavaScript for the question with the video, and paste this:
+    </div><br>
+                            Qualtrics.SurveyEngine.addOnload(function()
+{
+/Place your JavaScript here to run when the page loads/});Qualtrics.SurveyEngine.addOnReady(function()
+{
+var video = jQuery("#vidid");
+  var preview = false;
+  if(/^\/jfe[0-9]?\/preview/.test(window.location.pathname)) preview = true;  if(preview) {
+      if(jQuery('.MobilePreviewFrame:first').length > 0) {
+          var vidEl = video.get(0);
+          vidEl.muted = true;
+          vidEl.width = "300";
+      }
+  }  $('NextButton').hide();
+  video.on('ended', function(event) {          $('NextButton').click();  });
+});Qualtrics.SurveyEngine.addOnUnload(function()
+{
+/Place your JavaScript here to run when the page is unloaded/});
 
-                            <div class="center_box">
-                              <img class="img_center" style="width: 60%;" src="assets/img/design/michelleedit1.png">
                             </div><br>
 
                              2. Go into HTML view and remove the first "<" in there and instead add this line:  
