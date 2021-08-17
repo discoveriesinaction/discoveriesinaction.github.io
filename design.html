@@ -996,24 +996,9 @@
                         <div class="tab-content">
                            <p>
                              1. Add JavaScript for the question with the video, and paste this:
-    </div><br>
-                            Qualtrics.SurveyEngine.addOnload(function()
-{
-/Place your JavaScript here to run when the page loads/});Qualtrics.SurveyEngine.addOnReady(function()
-{
-var video = jQuery("#vidid");
-  var preview = false;
-  if(/^\/jfe[0-9]?\/preview/.test(window.location.pathname)) preview = true;  if(preview) {
-      if(jQuery('.MobilePreviewFrame:first').length > 0) {
-          var vidEl = video.get(0);
-          vidEl.muted = true;
-          vidEl.width = "300";
-      }
-  }  $('NextButton').hide();
-  video.on('ended', function(event) {          $('NextButton').click();  });
-});Qualtrics.SurveyEngine.addOnUnload(function()
-{
-/Place your JavaScript here to run when the page is unloaded/});
+                              <div class="center_box">
+                              <img class="img_center" style="width: 60%;" src="assets/img/design/michelleedit1.png">
+                        
 
                             </div><br>
 
