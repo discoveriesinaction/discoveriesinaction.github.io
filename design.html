@@ -1005,42 +1005,42 @@
                              1. Add JavaScript for the question with the video, and paste this:
                             
                              <xmp>
-                          Qualtrics.SurveyEngine.addOnload(function()
-                          {
-                          /Place your JavaScript here to run when the page 
-                           loads/});Qualtrics.SurveyEngine.addOnReady(function()
-                          {
-                          var video = jQuery("#vidid");
-                            var preview = false;
-                            if(/^\/jfe[0-9]?\/preview/.test(window.location.pathname)) preview = true;  if(preview) {
-                              if(jQuery('.MobilePreviewFrame:first').length > 0) {
-                                var vidEl = video.get(0);
-                                vidEl.muted = true;
-                                vidEl.width = "300";
-                              }
-                            }  $('NextButton').hide();
-                            video.on('ended', function(event) {          $('NextButton').click();  });
-                          });Qualtrics.SurveyEngine.addOnUnload(function()
-                          {
-                          /Place your JavaScript here to run when the page is unloaded/});
+                   Qualtrics.SurveyEngine.addOnload(function()
+                   {
+                   /Place your JavaScript here to run when the page 
+                    loads/});Qualtrics.SurveyEngine.addOnReady(function()
+                   {
+                   var video = jQuery("#vidid");
+                    var preview = false;
+                    if(/^\/jfe[0-9]?\/preview/.test(window.location.pathname)) preview = true;  if(preview) {
+                     if(jQuery('.MobilePreviewFrame:first').length > 0) {
+                      var vidEl = video.get(0);
+                      vidEl.muted = true;
+                      vidEl.width = "300";
+                     }
+                    }  $('NextButton').hide();
+                    video.on('ended', function(event) {          $('NextButton').click();  });
+                   });Qualtrics.SurveyEngine.addOnUnload(function()
+                   {
+                   /Place your JavaScript here to run when the page is unloaded/});
                          </xmp><br>
 
                       
                              2. Go into HTML view and remove the first "<" in there and instead add this line:  
                          <xmp>
-                          <video id="vidid" controls = "controls" autoplay = "autoplay" width = "100%"
+                    <video id="vidid" controls = "controls" autoplay = "autoplay" width = "100%"
                          </xmp><br>
                                 
                                 So, for example, this is what it looks like for my study question:
                                 
                             <xmp>
-                           <video id="vidid" controls = "controls" autoplay = "autoplay" width = "100%"
-                           video class="qmedia" controls="true" preload="auto" <source 
-                           src="https://nyu.qualtrics.com/CP/File.php?F=F_eg0dkiCIvJlMYWG" type="video/mp4" 
-                           /><embed align="middle" autoplay="false" bgcolor="white" class="qmedia" controller="true" 
-                           height="768" pluginspage="http://www.apple.com/quicktime/download/" 
-                           src="https://nyu.qualtrics.com/CP/File.php?F=F_eg0dkiCIvJlMYWG" type="video/quicktime" 
-                           width="1024" /></video>
+                    <video id="vidid" controls = "controls" autoplay = "autoplay" width = "100%"
+                    video class="qmedia" controls="true" preload="auto" <source 
+                    src="https://nyu.qualtrics.com/CP/File.php?F=F_eg0dkiCIvJlMYWG" type="video/mp4" 
+                    /><embed align="middle" autoplay="false" bgcolor="white" class="qmedia" controller="true" 
+                    height="768" pluginspage="http://www.apple.com/quicktime/download/" 
+                    src="https://nyu.qualtrics.com/CP/File.php?F=F_eg0dkiCIvJlMYWG" type="video/quicktime" 
+                    width="1024" /></video>
                             </xmp><br>
                                 
                                 3. (optional) Remove the controls functions (i.e., the controls="true" in the second line AND the controls = “controls” text in the first line) if you would like to remove the video progress bar:
